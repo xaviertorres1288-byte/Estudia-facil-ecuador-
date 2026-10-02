@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Estudia Fácil Ecuador</title>
+<style>
+:root{color-scheme:light dark;--bg:light-dark(#f6f8fb,#0d1420);--surface:light-dark(#fff,#151e2d);--surface2:light-dark(#eef4ff,#1b2738);--text:light-dark(#152033,#f3f6fb);--muted:light-dark(#667085,#aab6c8);--accent:light-dark(#2563eb,#60a5fa);--accent2:light-dark(#7c3aed,#a78bfa);--border:light-dark(#dfe5ee,#2a374b);}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}.app{min-height:100vh;background:var(--bg)}
+header{border-bottom:1px solid var(--border);background:color-mix(in srgb,var(--surface) 92%,transparent);position:sticky;top:0;z-index:10;backdrop-filter:blur(12px)}.nav{max-width:1120px;margin:auto;padding:15px 22px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-weight:900;font-size:20px;display:flex;gap:9px;align-items:center}.logo{width:36px;height:36px;border-radius:11px;background:linear-gradient(135deg,var(--accent),var(--accent2));display:grid;place-items:center;color:white}.navlinks{display:flex;gap:18px}.navlinks a{color:var(--muted);text-decoration:none;font-weight:650;font-size:14px}.navlinks a:hover{color:var(--text)}
+main{max-width:1120px;margin:auto;padding:38px 22px 70px}.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:28px;align-items:center;padding:30px 0 44px}.eyebrow{color:var(--accent);font-weight:800;font-size:13px;text-transform:uppercase;letter-spacing:.08em}.hero h1{font-size:clamp(38px,6vw,64px);line-height:.98;margin:12px 0 18px;letter-spacing:-.045em}.hero p{font-size:18px;line-height:1.6;color:var(--muted);max-width:650px}.search{margin-top:24px;display:flex;gap:10px}.search input{flex:1;border:1px solid var(--border);background:var(--surface);color:var(--text);padding:15px 17px;border-radius:14px;font-size:15px;outline:none}.search input:focus{border-color:var(--accent)}button{border:0;border-radius:13px;background:var(--accent);color:white;padding:13px 18px;font-weight:800;cursor:pointer}button:hover{filter:brightness(1.06)}.hero-card{background:linear-gradient(145deg,var(--surface2),var(--surface));border:1px solid var(--border);border-radius:24px;padding:26px;box-shadow:0 18px 50px color-mix(in srgb,var(--accent) 10%,transparent)}.hero-card .big{font-size:48px;font-weight:900}.hero-card p{font-size:15px;margin:7px 0 20px}.mini{display:grid;grid-template-columns:1fr 1fr;gap:10px}.mini div{border:1px solid var(--border);padding:13px;border-radius:13px;background:var(--surface)}.mini b{display:block;font-size:18px}.mini span{color:var(--muted);font-size:12px}
+section{margin-top:42px}.section-head{display:flex;align-items:end;justify-content:space-between;gap:16px;margin-bottom:18px}.section-head h2{font-size:28px;margin:0}.section-head p{color:var(--muted);margin:4px 0 0}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.card{background:var(--surface);border:1px solid var(--border);border-radius:18px;padding:20px;transition:.2s}.card:hover{transform:translateY(-3px);border-color:color-mix(in srgb,var(--accent) 50%,var(--border))}.icon{font-size:27px}.card h3{margin:11px 0 7px}.card p{margin:0;color:var(--muted);font-size:14px;line-height:1.5}.tools{grid-template-columns:repeat(3,1fr)}.tool{display:flex;flex-direction:column;gap:12px}.tool .top{display:flex;align-items:center;gap:12px}.tool .icon{width:45px;height:45px;border-radius:13px;background:var(--surface2);display:grid;place-items:center}.tool button{align-self:flex-start;margin-top:auto}.articles{grid-template-columns:repeat(3,1fr)}.article h3{font-size:17px}.tag{display:inline-block;background:var(--surface2);color:var(--accent);padding:5px 9px;border-radius:99px;font-size:11px;font-weight:800;margin-bottom:8px}.cta{margin-top:45px;background:linear-gradient(120deg,var(--accent),var(--accent2));color:white;border-radius:24px;padding:30px;display:flex;align-items:center;justify-content:space-between;gap:20px}.cta h2{margin:0 0 7px}.cta p{margin:0;opacity:.88}.cta button{background:white;color:#1d4ed8}.empty{display:none;color:var(--muted);padding:20px;border:1px dashed var(--border);border-radius:14px}
+footer{border-top:1px solid var(--border);padding:28px 22px;color:var(--muted);font-size:13px}footer .foot{max-width:1120px;margin:auto;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}footer a{color:var(--muted);margin-left:14px}
+@media(max-width:850px){.hero{grid-template-columns:1fr}.grid,.tools,.articles{grid-template-columns:repeat(2,1fr)}.navlinks{display:none}}@media(max-width:520px){main{padding:25px 15px 55px}.nav{padding:12px 15px}.hero h1{font-size:43px}.grid,.tools,.articles{grid-template-columns:1fr}.search{flex-direction:column}.search button{width:100%}.cta{display:block}.cta button{margin-top:18px}}
+</style>
+</head>
+<body>
+<div class="app">
+<header><nav class="nav"><div class="brand"><span class="logo">✦</span>Estudia Fácil Ecuador</div><div class="navlinks"><a href="#materias">Materias</a><a href="#herramientas">Herramientas</a><a href="#articulos">Artículos</a></div></nav></header>
+<main>
+<section class="hero">
+<div><div class="eyebrow">Aprende sin complicarte</div><h1>Entiende. Practica. Aprende.</h1><p>Recursos educativos claros para estudiantes de Ecuador: explicaciones paso a paso, fórmulas, ejercicios y herramientas gratuitas.</p><div class="search"><input id="search" aria-label="Buscar" placeholder="Busca: Newton, porcentajes, cromosomas…"><button onclick="buscar()">Buscar</button></div></div>
+<div class="hero-card"><div class="big">📚</div><h2>Todo en un solo lugar</h2><p>Contenido pensado para encontrar rápido lo que necesitas para estudiar.</p><div class="mini"><div><b>6+</b><span>materias</span></div><div><b>100%</b><span>gratuito</span></div></div></div>
+</section>
+<section id="materias"><div class="section-head"><div><h2>Materias</h2><p>Explora por asignatura.</p></div></div><div class="grid searchable">
+<div class="card"><div class="icon">➗</div><h3>Matemáticas</h3><p>Ecuaciones, funciones, porcentajes, interés y más.</p></div>
+<div class="card"><div class="icon">⚙️</div><h3>Física</h3><p>Movimiento, fuerza, leyes de Newton y fórmulas.</p></div>
+<div class="card"><div class="icon">🧪</div><h3>Química</h3><p>Átomo, mol, Avogadro, reacciones y conceptos clave.</p></div>
+<div class="card"><div class="icon">🧬</div><h3>Biología</h3><p>Células, genética, cromosomas, alelos y organismos.</p></div>
+<div class="card"><div class="icon">🌱</div><h3>Ciencias Naturales</h3><p>Flora, fauna, ambiente y temas científicos.</p></div>
+<div class="card"><div class="icon">🌎</div><h3>Turismo</h3><p>Sostenibilidad, patrimonio, ética y aviturismo.</p></div>
+<div class="card"><div class="icon">📖</div><h3>Lengua</h3><p>Literatura, gramática, recursos literarios y escritura.</p></div>
+<div class="card"><div class="icon">🎨</div><h3>Arte</h3><p>Movimientos artísticos, Land Art y cultura.</p></div>
+</div><div id="empty" class="empty">No encontramos resultados. Prueba con otra palabra.</div></section>
+<section id="herramientas"><div class="section-head"><div><h2>Herramientas gratuitas</h2><p>Pequeñas utilidades para resolver tareas más rápido.</p></div></div><div class="grid tools">
+<div class="card tool"><div class="top"><div class="icon">%</div><div><h3>Calculadora de porcentaje</h3><p>Calcula porcentajes en segundos.</p></div></div><button onclick="porcentaje()">Probar</button></div>
+<div class="card tool"><div class="top"><div class="icon">🧮</div><div><h3>Calculadora de interés</h3><p>Explora interés simple y compuesto.</p></div></div><button onclick="interes()">Probar</button></div>
+<div class="card tool"><div class="top"><div class="icon">📐</div><div><h3>Fórmulas de física</h3><p>Consulta fórmulas frecuentes.</p></div></div><button onclick="alert('Próximamente: biblioteca de fórmulas de física.')">Ver</button></div>
+</div></section>
+<section id="articulos"><div class="section-head"><div><h2>Artículos para estudiar</h2><p>Explicaciones cortas y fáciles de entender.</p></div></div><div class="grid articles searchable">
+<div class="card article"><span class="tag">Física</span><h3>Las 3 leyes de Newton explicadas</h3><p>Qué significa cada ley y ejemplos sencillos.</p></div>
+<div class="card article"><span class="tag">Biología</span><h3>Cromosomas y alelos</h3><p>Conceptos fundamentales de genética, explicados sin complicaciones.</p></div>
+<div class="card article"><span class="tag">Matemáticas</span><h3>Sistemas de ecuaciones 2×3</h3><p>Qué son y cómo interpretar sus ecuaciones paso a paso.</p></div>
+</div></section>
+<div class="cta"><div><h2>¿No encuentras un tema?</h2><p>La idea es ir ampliando la biblioteca con las preguntas que más buscan los estudiantes.</p></div><button onclick="document.getElementById('search').focus()">Buscar tema</button></div>
+</main>
+<footer><div class="foot"><span>© 2026 Estudia Fácil Ecuador · Proyecto educativo</span><span><a href="#">Privacidad</a><a href="#">Términos</a><a href="#">Contacto</a></span></div></footer>
+</div>
+<script>
+function buscar(){const q=document.getElementById('search').value.toLowerCase().trim();const cards=[...document.querySelectorAll('.searchable .card')];let n=0;cards.forEach(c=>{const ok=!q||c.innerText.toLowerCase().includes(q);c.style.display=ok?'':'none';if(ok)n++});document.getElementById('empty').style.display=n?'none':'block';if(q)document.getElementById('materias').scrollIntoView({behavior:'smooth'});}
+document.getElementById('search').addEventListener('keydown',e=>{if(e.key==='Enter')buscar()});
+function porcentaje(){const base=prompt('¿Cuál es la cantidad?');if(base===null)return;const p=prompt('¿Qué porcentaje quieres calcular?');if(p===null)return;const a=Number(base),b=Number(p);if(!Number.isFinite(a)||!Number.isFinite(b)){alert('Ingresa números válidos.');return}alert(`${b}% de ${a} = ${(a*b/100).toFixed(2)}`)}
+function interes(){const c=Number(prompt('Capital inicial:'));const r=Number(prompt('Tasa por período (%):'));const n=Number(prompt('Número de períodos:'));if([c,r,n].some(v=>!Number.isFinite(v))){alert('Ingresa números válidos.');return}alert(`Interés compuesto: ${(c*Math.pow(1+r/100,n)-c).toFixed(2)}\nMonto final: ${(c*Math.pow(1+r/100,n)).toFixed(2)}`)}
+</script>
+</body></html>
